@@ -1134,4 +1134,164 @@ footer .container .banner .right {
     font-size: 1.75rem;
   }
 }
-/**********************************************************************************************************************/
+
+/******************* SearchBox **************/
+.search-reservation {
+  display: flex;
+  min-height: 75vh;
+  padding: 30px 20px;
+  justify-content: center;
+  align-items: center;
+  background: url(/reserve.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.search-reservation .container {
+  max-width: 1500px;
+  min-width: 1500px;
+  display: flex;
+}
+
+.search-reservation .container .banner {
+  width: 50%;
+  padding: 50px;
+}
+
+.search-reservation .container .banner .reservation_form_box {
+  width: 400px;
+  background: #fff;
+  height: 100%;
+  padding: 20px;
+  box-shadow: -1px 0px 37px 0px rgba(152, 87, 191, 0.75);
+  -webkit-box-shadow: -1px 0px 37px 0px rgba(152, 87, 191, 0.75);
+  -moz-box-shadow: -1px 0px 37px 0px rgba(152, 87, 191, 0.75);
+}
+
+.search-reservation .container .banner .reservation_form_box form div {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.search-reservation .container .banner .reservation_form_box form div input {
+  flex: 1;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 300;
+  border: none;
+  border-bottom: 1px solid #333;
+  background: transparent;
+}
+
+.search-reservation .container .banner .reservation_form_box form div input:focus {
+  outline: none;
+  border-bottom: 2px solid skyblue;
+}
+
+.search-reservation .container .banner .reservation_form_box form div input::placeholder {
+  color: #222;
+}
+
+.search-reservation .container .banner .reservation_form_box h1 {
+  font-weight: 200;
+  font-size: 2.75rem;
+  color: #111;
+  text-align: center;
+}
+
+.search-reservation .container .banner .reservation_form_box p {
+  color: #333;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-reservation .container .banner:first-child {
+  display: flex;
+  justify-content: center;
+}
+
+.search-reservation .container .banner img {
+  width: 550px;
+}
+
+.search-reservation .container .banner .reservation_form_box form button {
+  border: 1px solid black;
+  padding: 8px 36px;
+  border-radius: 30px;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 13px;
+  color: #111;
+  background: transparent;
+  margin-top: 30px;
+}
+
+.search-reservation .container .banner .reservation_form_box form button span {
+  margin-left: 1rem;
+  padding: 3px;
+  background: #111;
+  border-radius: 100%;
+  color: #fff;
+}
+
+@media (max-width: 1520px) {
+  .search-reservation .container {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 1040px) {
+  .search-reservation .container .banner {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .search-reservation .container .banner img {
+    width: 42vw;
+  }
+}
+
+@media (max-width: 885px) {
+  .search-reservation .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .search-reservation .container .banner img {
+    width: 70vw;
+  }
+  .search-reservation .container .banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 660px) {
+  .search-reservation .container .banner img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .search-reservation .container .banner .reservation_form_box {
+    width: 100%;
+  }
+  .search-reservation .container .banner .reservation_form_box h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 325px) {
+  .search-reservation .container .banner .reservation_form_box h1 {
+    font-size: 1.6rem;
+  }
+}
