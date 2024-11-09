@@ -1,0 +1,180 @@
+{
+    "data": [
+        {"ourQualities" : [
+            {
+                "id": 1,
+                "image": "./quality_food.svg",
+                "title": "QUALITY FOOD",
+                "description": "Fresh, nutritious ingredients prepared with care to enhance food quality." 
+            },
+            {
+                "id": 2,
+                "image": "./super_taste.svg",
+                "title": "SUPER TASTE",
+                "description": "Rich, flavorful dishes that deliver an unforgettable and delicious experience." 
+            },
+            {
+                "id": 3,
+                "image": "./fast_delivery1.png",
+                "title": "STUDENT SATISFACTION",
+                "description": "Affordable, tasty food options ensuring satisfaction and happiness for students." 
+            }
+        ],
+        "dishes": [
+            {
+                "id": 1,
+                "image": "./Poha.jpg",
+                "title": "Poha",
+                "category": "Breakfast"
+            },
+            {
+                "id": 2,
+                "image": "./Samosa.jpg",
+                "title": "Samosa",
+                "category": "Breakfast"
+            },
+            {
+                "id": 3,
+                "image": "./pizza.jpg",
+                "title": "Pizza",
+                "category": "Lunch"
+            },
+            {
+                "id": 4,
+                "image": "Paratha.jpg",
+                "title": "Paratha",
+                "category": "Lunch"
+            },
+            {
+                "id": 5,
+                "image": "./Fries.jpg",
+                "title": "French Fries",
+                "category": "Snacks"
+            },
+            {
+                "id": 6,
+                "image": "./Icecreams.jpg",
+                "title": "Icecream",
+                "category": "Dessert"
+            },
+            {
+                "id": 7,
+                "image": "./BrownieIcecream.jpg",
+                "title": "Brownie With Ice-Cream",
+                "category": "Dessert"
+            },
+            {
+                "id": 8,
+                "image": "./Shake.jpg",
+                "title": "Milshakes",
+                "category": "Dessert"
+            }
+        ],
+        "team": [
+            {
+                "id": 1,
+                "image": "./team_member_1.png",
+                "name": "JOSH DAGLA",
+                "designation": "Founder & Head Chef"
+            },
+            {
+                "id": 2,
+                "image": "./team_member_2.png",
+                "name": "KASIBHATTA SUPRABHAT",
+                "designation": "Sous Chef"
+            },
+            {
+                "id": 3,
+                "image": "./team_member_3.png",
+                "name": "KSHITIJ GURBUXANI",
+                "designation": "Fast Food Chef"
+            },
+            {
+                "id": 4,
+                "image": "./team_member_4.png",
+                "name": "KRISH PANCHAL",
+                "designation": "Senior Chef"
+            },
+            {
+                "id": 5,
+                "image": "./team_member_4.png",
+                "name": "PRANAY VASOYA",
+                "designation": "Senior Chef"
+            }
+        ],
+        "testimonials": [
+            {
+                "id": 1,
+                "image": "./review1.png",
+                "description": "Morbi nulla nec dui lacus, in. Libero in pretium metus massa. Sodales dignissim vitae mauris varius faucibus. Eleifend dui, non laoreet ac luctus facilisis diam. Enim scelerisque vel at id viverra tellus.",
+                "rating": 4,
+                "userName": "Jane Cooper"
+            },
+            {
+                "id": 2,
+                "image": "./review2.png",
+                "description": "Tortor vel nunc netus pharetra enim, enim dolor mauris in. Sit nam fringilla in egestas. Libero condimentum quis in vulputate adipiscing venenatis augue. Venenatis faucibus.",
+                "rating": 4.5,
+                "userName": "Esther Howard"
+            },
+            {
+                "id": 3,
+                "image": "./review3.png",
+                "description": "Tortor vel nunc netus pharetra enim, enim dolor mauris in. Sit nam fringilla in egestas. Libero condimentum quis in vulputate adipiscing venenatis augue. Venenatis faucibus.",
+                "rating": 5,
+                "userName": "Guy Hawkins"
+            }
+        ],
+        "who_we_are": [
+            {
+                "id": 1,
+                "number": "14",
+                "title": "Restaurants"
+            },
+            {
+                "id": 2,
+                "number": "20",
+                "title": "Chef In Kitchen"
+            },
+            {
+                "id": 3,
+                "number": "08",
+                "title": "Years Of Experience"
+            },
+            {
+                "id": 4,
+                "number": "200",
+                "title": "Food Dishes"
+            }
+        ],
+        "navbarLinks": [
+            {
+                "id": 1,
+                "title": "HOME",
+                "link": "heroSection"
+            },
+            {
+                "id": 2,
+                "title": "ABOUT US",
+                "link": "about"
+            },
+            {
+                "id": 3,
+                "title": "SERVICES",
+                "link": "qualities"
+            },
+            {
+                "id": 4,
+                "title": "RESERVATION",
+                "link": "reservation"
+            },
+            {
+                "id": 5,
+                "title": "TEAM",
+                "link": "team"
+            }
+        ]
+    
+    } 
+    ]
+}
