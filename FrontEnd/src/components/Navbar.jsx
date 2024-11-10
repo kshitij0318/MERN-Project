@@ -32,7 +32,7 @@ const Navbar = () => {
             duration={500}
             className="menuBtn"
           >
-            OUR MENU
+            POPULAR DISHES
           </Link>
         </div>
         <div className="hamburger" onClick={() => setShow(!show)}>

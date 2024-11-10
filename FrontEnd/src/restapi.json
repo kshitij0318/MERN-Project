@@ -85,19 +85,19 @@
             },
             {
                 "id": 3,
-                "image": "./team_member_3.png",
+                "image": "./team_member_3.jpg",
                 "name": "KSHITIJ GURBUXANI",
                 "designation": "Fast Food Chef"
             },
             {
                 "id": 4,
-                "image": "./team_member_4.png",
+                "image": "./team_member_4.jpg",
                 "name": "KRISH PANCHAL",
                 "designation": "Senior Chef"
             },
             {
                 "id": 5,
-                "image": "./team_member_4.png",
+                "image": "./team_member_5.jpg",
                 "name": "PRANAY VASOYA",
                 "designation": "Senior Chef"
             }
