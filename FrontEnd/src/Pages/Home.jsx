@@ -6,6 +6,7 @@ import Menu from '../components/Menu';
 import Team from '../components/Team';
 import Reservation from '../components/Reservation';
 import SearchReservation from '../components/Search';  // Import the SearchReservation component
+import ShowAll from '../components/ShowAll';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Qualities />
       <Menu />
       <Reservation />
+      <ShowAll/>
       <SearchReservation />  
       <Team />
     </>

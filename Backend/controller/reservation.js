@@ -77,23 +77,28 @@ export const searchReservations = async (req, res, next) => {
 
 //working
 export const updateReservation = async (req, res, next) => {
-    const { PhoneNumber, FirstName, LastName, Email, Date, Time } = req.body;
-    if (!FirstName || !LastName || !Email || !PhoneNumber || !Date || !Time) {
-        return next(new ErrorHandler("Please fill all the details in the reservation form", 400));
+    const { Date, Time } = req.body; // Only Date and Time are required for update
+
+    if (!Date || !Time) {
+        return next(new ErrorHandler("Please provide both Date and Time to update the reservation.", 400));
     }
+
     try {
-        const reservation = await Reservation.findOneAndUpdate(
-            { PhoneNumber },
-            { FirstName, LastName, Email, PhoneNumber, Date, Time },
-            { new: true, runValidators: true }
+        // Find reservation by ID and update the Date and Time fields
+        const reservation = await Reservation.findByIdAndUpdate(
+            req.params.id, // Using reservation ID from URL
+            { Date, Time }, // Fields to be updated
+            { new: true, runValidators: true } // Return the updated reservation and validate before saving
         );
+
         if (!reservation) {
             return next(new ErrorHandler("Reservation not found", 404));
         }
+
         res.status(200).json({
             success: true,
             message: "Reservation has been updated.",
-            data: reservation,
+            data: reservation, // Return updated reservation data
         });
     } catch (error) {
         if (error.name === "ValidationError") {
@@ -102,20 +107,24 @@ export const updateReservation = async (req, res, next) => {
             );
             return next(new ErrorHandler(validationErrors.join(", "), 400));
         }
-        return next(error);
+        return next(error); // Pass any other errors to the error handler
     }
 };
-//working
+// Handle deleting a reservation by PhoneNumber
 export const deleteReservation = async (req, res, next) => {
-    const { PhoneNumber } = req.body;
-    if (!PhoneNumber) {
-        return next(new ErrorHandler("Please provide a phone number to delete", 400));
+    const { id } = req.params; // Get the id from the URL parameters
+
+    if (!id) {
+        return next(new ErrorHandler("Please provide a reservation id to delete", 400));
     }
+
     try {
-        const reservation = await Reservation.findOneAndDelete({ PhoneNumber });
+        const reservation = await Reservation.findByIdAndDelete(id); // Find the reservation by id and delete it
+
         if (!reservation) {
             return next(new ErrorHandler("Reservation not found", 404));
         }
+
         res.status(200).json({
             success: true,
             message: "Reservation has been deleted.",

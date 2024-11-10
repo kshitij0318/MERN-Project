@@ -1,22 +1,29 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import '../App.css';
 
 const ReservationResults = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const { reservations } = location.state || { reservations: [] };
+
+  const goToHomePage = () => {
+    navigate('/');
+  };
 
   if (reservations.length === 0) {
     return (
-      <div>
-        <h2>No reservations found.</h2>
+      <div className="reservation-results-container">
+        <h2 className="no-reservations">No reservations found.</h2>
+        <button onClick={goToHomePage} className="home-button">Go to Home Page</button>
       </div>
     );
   }
 
   return (
-    <section>
+    <section className="reservation-results-container">
       <h2>Found Reservations</h2>
-      <table>
+      <table className="reservation-results-table">
         <thead>
           <tr>
             <th>First Name</th>
@@ -40,6 +47,7 @@ const ReservationResults = () => {
           ))}
         </tbody>
       </table>
+      <button onClick={goToHomePage} className="home-button">Go to Home Page</button>
     </section>
   );
 };

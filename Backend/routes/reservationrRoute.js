@@ -10,8 +10,9 @@ router.get("/all", getReservations);
 
 router.get("/search", searchReservations);
 
-router.put("/update", updateReservation);
+router.put("/update/:id", updateReservation);
 
-router.delete("/delete", deleteReservation);
+router.delete("/delete/:id", deleteReservation);
+
 
 export default router;

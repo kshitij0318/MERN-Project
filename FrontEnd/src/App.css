@@ -1295,3 +1295,392 @@ footer .container .banner .right {
     font-size: 1.6rem;
   }
 }
+/* Resrvation Results*/
+/* Styles for Reservation Results page */
+.reservation-results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 80vh;
+  background-color: #f7f7f7;
+}
+
+.reservation-results-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.reservation-results-table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-results-table th,
+.reservation-results-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.reservation-results-table thead th {
+  background-color: #333;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.reservation-results-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.reservation-results-table tbody tr:hover {
+  background-color: #e0e0e0;
+}
+
+.no-reservations {
+  font-size: 1.5rem;
+  color: #777;
+  margin-top: 40px;
+}
+.reservation-results-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.reservation-results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.reservation-results-table th,
+.reservation-results-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.reservation-results-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.home-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #09121c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+/*ShowAll*/
+.show-all-reservations {
+  display: flex;
+  min-height: 75vh;
+  padding: 30px 20px;
+  justify-content: center;
+  align-items: center;
+  background: url(/showall.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.show-all-reservations .container {
+  max-width: 1500px;
+  min-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.show-all-reservations .container h1 {
+  font-weight: 200;
+  font-size: 2.75rem;
+  color: #111;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.show-all-reservations .container button {
+  border: 1px solid black;
+  padding: 10px 30px;
+  border-radius: 30px;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 13px;
+  color: #111;
+  background: transparent;
+  margin-bottom: 30px;
+}
+
+.show-all-reservations .container button:disabled {
+  color: gray;
+  border: 1px solid gray;
+}
+
+.show-all-reservations .container .reservation-results {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.show-all-reservations .container .reservation-results table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.show-all-reservations .container .reservation-results table th,
+.show-all-reservations .container .reservation-results table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.show-all-reservations .container .reservation-results table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.show-all-reservations .container .reservation-results table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.show-all-reservations .container .reservation-results table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.show-all-reservations .container p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  text-align: center;
+}
+
+@media (max-width: 1520px) {
+  .show-all-reservations .container {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 1040px) {
+  .show-all-reservations .container button {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 910px) {
+  .show-all-reservations .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .show-all-reservations .container button {
+    width: 100%;
+    padding: 10px 30px;
+  }
+
+  .show-all-reservations .container .reservation-results {
+    width: 90%;
+  }
+}
+
+@media (max-width: 660px) {
+  .show-all-reservations .container .reservation-results table th,
+  .show-all-reservations .container .reservation-results table td {
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  .show-all-reservations .container h1 {
+    font-size: 2rem;
+  }
+  .show-all-reservations .container button {
+    font-size: 11px;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 325px) {
+  .show-all-reservations .container h1 {
+    font-size: 1.6rem;
+  }
+}
+/* Close Button*/
+.show-all-reservations .close-button {
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.show-all-reservations .close-button:hover {
+  background-color: #e53935;
+}
+
+/* Update and delete*/
+.show-all-reservations .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.show-all-reservations .update-btn,
+.show-all-reservations .delete-btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.show-all-reservations .update-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.show-all-reservations .delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+.show-all-reservations .update-btn:hover {
+  background-color: #45a049;
+}
+
+.show-all-reservations .delete-btn:hover {
+  background-color: #e53935;
+}
+
+.show-all-reservations .close-button {
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.show-all-reservations .close-button:hover {
+  background-color: #e53935;
+}
+
+/* Update*/
+/* Add this to your CSS file */
+
+.update-modal {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  z-index: 1000;
+}
+
+.update-modal h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.update-modal label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.update-modal input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.update-modal button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.update-modal button:hover {
+  background-color: #45a049;
+}
+
+.update-modal button.cancel-btn {
+  background-color: #f44336;
+}
+
+.update-modal button.cancel-btn:hover {
+  background-color: #e53935;
+}
+
+.close-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.close-button:hover {
+  background-color: #0056b3;
+}
+
+/* Make the page background dim when modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+
+body.modal-open::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+
+
