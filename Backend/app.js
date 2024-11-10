@@ -9,7 +9,7 @@ dotenv.config({path : './config/config.env'});
 
 app.use(
     cors({
-        origin: [process.env.frontend_url],
+        origin: ["https://restaurant-reservation-vert.vercel.app/"],
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true,
     })
